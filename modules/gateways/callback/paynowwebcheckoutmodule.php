@@ -96,7 +96,7 @@ try {
         addInvoicePayment(
             $invoiceId,
             $transactionId,
-            $statusUpdate->amount(),
+            null,
             null,
             $gatewayModuleName
         );
