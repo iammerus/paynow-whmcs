@@ -86,7 +86,7 @@ function paynowwebcheckoutmodule_link($params)
     $returnUrl = $params['returnurl'];
     $moduleName = $params['paymentmethod'];
 
-    $callbackUrl = $systemUrl . '/modules/gateways/callback/' . $moduleName . '.php';
+    $callbackUrl = $systemUrl . 'modules/gateways/callback/' . $moduleName . '.php';
 
     // Instantiate the Paynow class
     $paynow = new Paynow($integrationID, $integrationKey, $returnUrl, $callbackUrl);
